@@ -1,0 +1,59 @@
+<!Doctype html>
+<head>
+    <title>Calculator</title>
+    <style>
+      .head{
+          color: darkblue;
+          padding: 23px;
+          font-family: "Abyssinica SIL";
+      }
+
+      .enter {
+          background-color: navajowhite;
+          padding: 12px;
+          font-size: 20px;
+          width: 225px;
+      }
+    </style>
+</head>
+<body  STYLE="background-color: aquamarine">
+<center>
+    <h1 class="head"> <B>Calculator</B></h1>
+<form name="calculator">
+<table border="3px" cellpadding="10px">
+<tr>
+    <input class="enter" type="text" name="input"  id="display">
+</tr>
+<tr>
+    <td>
+        <input  type="button" name="one" ONCLICK="calculator.input.value+='1'" value="1">
+    </td>
+    <td><input type="button" name="two" ONCLICK="calculator.input.value+='2'" value="2"></td>
+    <td><input type="button" name="three" ONCLICK="calculator.input.value+='3'" value="3"></td>
+    <td><input type="button" name="add" ONCLICK="calculator.input.value+='+'" value="+"></td>
+</tr>
+<tr>
+    <td><input type="button" name="four" ONCLICK="calculator.input.value+='4'" value="4"></td>
+    <td><input type="button" name="five" ONCLICK="calculator.input.value+='5'" value="5"></td>
+    <td><input type="button" name="six" ONCLICK="calculator.input.value+='6'" value="6"></td>
+    <td><input type="button" name="divide" ONCLICK="calculator.input.value+='/'" value="/ "></td>
+</tr>
+<tr>
+    <td><input type="button" name="seven" ONCLICK="calculator.input.value+='7'" value="7"></td>
+    <td><input type="button" name="eight" ONCLICK="calculator.input.value+='8'" value="8"></td>
+    <td><input type="button" name="one" ONCLICK="calculator.input.value+='9'" value="9"></td>
+    <td><input type="button" name="multiply" ONCLICK="calculator.input.value+='*'" value="* "></td>
+
+</tr>
+<tr>
+    <td><input type="button" name="zero" ONCLICK="calculator.input.value+='0'" value="0"></td>
+    <td><input type="button" name="dot" ONCLICK="calculator.input.value+='.'" value=". "></td>
+    <td><input type="button" value="=" name="equal" ONCLICK="calculator.input.value=eval(calculator.input.value)"></td>
+    <td><input type="button" name="subtract" ONCLICK="calculator.input.value+='-'" value="- "></td>
+    <td><input id="btn" type=button value="C" OnClick="calculator.input.value=''"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
